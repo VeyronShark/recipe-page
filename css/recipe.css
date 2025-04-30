@@ -194,4 +194,9 @@ li {
     border-top-left-radius: 15px;
     overflow: hidden;
   }
+  .ingredients ul,
+  .instructions ul,
+  .extra-notes ul {
+    padding-left: 20px;
+  }
 }
