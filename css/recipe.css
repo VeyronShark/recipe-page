@@ -1,12 +1,20 @@
 /* color palette */
 :root{
+  --background: #FCEFCB;
+  --section-1: #FAD59A;
+  --section-2: #A86523;
+  --hover-text-1: #A86523;
+  --hover-text-2: var(--background);
+  --cta: #E9A319;
+}
+/* :root{
   --background: #D9EEB8;
   --section-1: #FEF8DD;
   --section-2: #7CB0A1;
   --hover-text-1: #6D597A;
   --hover-text-2: var(--background);
   --cta: #F4B266;
-}
+} */
 
 /* fonts */
 @font-face {
@@ -56,8 +64,14 @@ body {
   font-family: MavenPro, sans-serif;
   max-width: 448px;
 }
+header{
+  overflow: hidden;
+  height: 298px;
+}
 header img {
   width: 100%;
+  height: 100%;
+  transition: all 150ms ease;
 }
 main{
   padding: 16px;
@@ -173,30 +187,30 @@ li {
 .extra-notes:hover {
   transform: translateY(-3px);
   scale: 1.02;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.40);
 }
+img:hover{
+  transform: scale(1.05);
+}
+
 /* media queries */
 @media (min-width: 800px){
   .recipe-card{
-    padding: 32px;
     margin-top: 40px;
     margin-bottom: 40px;
     border-radius: 20px;
-    max-width: 760px;
-    width: 760px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    max-width: 720px;
+    width: 720px;
   }
   header{
-    margin: 16px 16px;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
-    overflow: hidden;
+    height: 480px;
   }
-  .ingredients ul,
-  .instructions ul,
-  .extra-notes ul {
+  main {
+    padding: 24px;
+  }
+  .ingredients li,
+  .instructions li,
+  .extra-notes li {
     padding-left: 20px;
   }
 }
