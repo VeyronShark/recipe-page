@@ -3,75 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/recipe.css">
-  <title>Make a Chocolate Cake</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="recipe.css">
+  <title>Recipe</title>
 </head>
 <body>
-  <div class="recipe-card">
-    <header>
-      <img src="images/chocolate-cake.webp" alt="a chocolate cake">
-    </header>
+  <header>
+    <div class="upper-container">
+      <div class="left-items">
+        <button class="hamburger">
+          <i class="fas fa-bars"></i>
+        </button>
 
-    <main>
-      <h1>Make a Chocolate cake at home</h1>
-      
-      <div class="description">
-        There's something truly special about homemade meals — they carry a little love in every bite. This recipe has been a favorite in my kitchen for its simplicity, warmth, and the way it brings my people together. Whether you're cooking for family or treating yourself, this cake will surely become a cozy go-to you'll want to make again and again.
+        <div class="logo-img"></div>
       </div>
 
-      <hr class="divider" />
+      <div class="center-items">
+        <div class="search-bar">
+          <input type="text" class="search-text" placeholder="Search recipe...">
 
-      <h2>Recipe</h2>
-
-      <div class="recipe-container">
-        <div class="ingredients">
-          <h3>Ingredients</h3>
-
-          <ul>
-            <li class="phover">55 grams cocoa powder</li>
-            <li class="phover">120 grams hot water</li>
-            <li class="phover">2 eggs</li>
-            <li class="phover">3 grams / 1 teaspoon vanilla extract</li>
-            <li class="phover">95 grams unsalted butter</li>
-            <li class="phover">120 grams warm milk</li>
-            <li class="phover">1 teaspoon Instant coffee powder</li>
-            <li class="phover">175 grams sugar</li>
-            <li class="phover">175 grams AP flour</li>
-            <li class="phover">1 teaspoon baking powder</li>
-            <li class="phover"><sup>1</sup>/<sub>2</sub> teaspoon baking soda</li>
-            <li class="phover">Baking paper / oil for greasing the pan</li>
-          </ul>
-        </div>
-
-        <div class="instructions">
-          <h3>Instructions</h3>
-
-          <ul>
-            <li class="phover">Mix coffee powder with hot water</li>
-            <li class="phover">Add the mixture to cocoa powder</li>
-            <li class="phover">Add the eggs, vanilla extract and softened / melted butter</li>
-            <li class="phover">Add warm milk</li>
-            <li class="phover">Mix well before seiving the dry ingredients in</li>
-            <li class="phover">Add the dry ingredients</li>
-            <li class="phover">Mix well</li>
-            <li class="phover">Bake in preheated oven at 170&deg;C for 30 mins</li>
-            <li class="phover">Remove / stop baking when toothpick comes clean</li>
-          </ul>
+          <button class="search-button">
+            <i class="fas fa-search"></i>
+          </button>
         </div>
       </div>
 
-      <div class="extra-notes">
-        <h3>Extra notes</h3>
+      <div class="right-items">
+        <button id="signup">Sign Up</button>
 
-        <ul>
-          <li class="yhover">You can use a hand mixer but it isn't required</li>
-          <li class="yhover">You can add 2-3 tablespoons more flour if batter seems too liquidy</li>
-          <li class="yhover">You can reduce the amount of hot water too</li>
-          <li class="yhover">You can follow a different order of wet ingredients too</li>
-          <li class="yhover">It's okay if it looks a tad lumpy / looks like the butter hasn't dissolved</li>
-        </ul>
+        <button id="login">Login</button>
       </div>
-    </main>
-  </div>
+    </div>
+
+    <div class="side-container">
+      <a href="">Trending</a>
+      <a href="">Most Popular</a>
+      <a href="">Popular Cooks</a>
+      <a href="">Popular Tags</a>
+      <a href="">All Tags</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="carousel-container">
+      <div class="carousel-card" style="background-image: url('./assets/images/noodles.avif')">
+        <div class="carousel-links">
+          <h2>Recipe heading</h2>
+          <p>Recipe Author</p>
+          <a href="">Visit Page <i class="fa-solid fa-up-right-from-square"></i></a> 
+        </div>
+      </div>
+
+      <div class="carousel-card" style="background-image: url('./assets/images/pizza.jpg')">
+        <div class="carousel-links">
+          <h2>Recipe heading</h2>
+          <p>Recipe Author</p>
+          <a href="">Visit Page <i class="fa-solid fa-up-right-from-square"></i></a> 
+        </div>
+      </div>
+
+      <div class="carousel-card" style="background-image: url('./assets/images/ricebowl.jpg')">
+        <div class="carousel-links">
+          <h2>Recipe heading</h2>
+          <p>Recipe Author</p>
+          <a href="">Visit Page <i class="fa-solid fa-up-right-from-square"></i></a> 
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="recipe.js"></script>
 </body>
 </html>
