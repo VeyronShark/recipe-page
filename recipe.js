@@ -27,6 +27,22 @@ function moveCarousel() {
   }
 }
 
-setInterval(moveCarousel, 5000);
+const movingCarousel = setInterval(moveCarousel, 5000);
 
-console.log(screen.width);
+// MAKING RECIPE CARD FLIPPING FEATURE
+const descButtons = document.querySelectorAll('.turn-recipe-card');
+const reflips = document.querySelectorAll('.recipe-card-back button');
+descButtons.forEach((desc) => {
+  desc.addEventListener('click', () => {
+    const card = desc.parentElement.parentElement.parentElement.parentElement;
+    card.style.transform = "rotateY(.5turn)";
+  });
+});
+reflips.forEach((reflip) => {
+  reflip.addEventListener('click', () => {
+    const card = reflip.parentElement.parentElement;
+    card.style.transform = "rotateY(0)";
+  });
+});
+
+
