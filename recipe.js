@@ -21,8 +21,6 @@ function moveCarousel() {
     currentCarouselPosition = 0;
   }
   for (let i = 0; i < cards.length; i++){
-    // const currentTranslateX = window.getComputedStyle(cards[i]).getPropertyValue("transform");
-    // console.log(currentTranslateX);
     cards[i].style.transform = `translateX(${i - currentCarouselPosition}00%)`;
   }
 }
